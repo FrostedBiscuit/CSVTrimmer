@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Python: csv_trimmer Debugger",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": [
+                "test_data_copy.csv"
+            ],
+            "console": "integratedTerminal"
+        },
+
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
