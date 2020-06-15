@@ -11,7 +11,7 @@ def trim_csv():
         print(f"Path {sys.argv[1]} is invaild.")
         return
 
-    element_split_char = "," #str(input("Enter the split character: "))
+    element_split_char = str(input("Enter the split character: "))
     
     file_to_read = open(sys.argv[1], "r")
 
@@ -20,7 +20,9 @@ def trim_csv():
 
     file_to_read.close()
 
-    file_to_write = open(f"{sys.argv[1]}", "w")
+    new_file_name = f"{os.path.splitext(sys.argv[1])[0]}_trimmed{os.path.splitext(sys.argv[1])[1]}"
+
+    file_to_write = open(new_file_name, "w")
 
     print(f"{element_split_char} ".join(header), file=file_to_write)
 
