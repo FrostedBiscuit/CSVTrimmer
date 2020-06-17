@@ -10,7 +10,7 @@ It does exactly what it says on the tin i.e. trims extra unused elements from yo
 ## Example
 Input:
 ```bash
-user@computer: python mycsvfile.csv 
+user@computer: python csv_trimmer.py mycsvfile.csv 
 ```
 mycsvfile.csv
 ```csv
